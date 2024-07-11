@@ -1,0 +1,502 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Define the animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Initial state */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* State when the element is visible */
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* nav-bar */
+.img1 {
+    width: 80px;
+    height: 80px;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    background-color: rgb(26, 24, 24);
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-items: center;
+    height: 10vh;
+}
+
+.lines {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-bar .lines div {
+    background-color: white;
+    height: 3px;
+    width: 30px;
+    margin-right: 10px;
+    margin: 5px;
+    transition: all 0.3s ease-in;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo-content {
+    padding: 30px 0px;
+}
+
+.menu-links {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+    float: right;
+}
+
+
+
+
+/* nav-bar end */
+/* section-1 start */
+.sec-1 {
+    background-image: url("./assets/black-sofa-living-room-with-blank-table-mock-up.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    height: 600px;
+    align-items: center;
+    padding: 0px 40px;
+}
+
+.sec1-content {
+    background-color: rgb(235, 225, 225, 0.2);
+    width: 400px;
+    backdrop-filter: blur(7px);
+    color: white;
+    padding: 0px 60px;
+}
+
+/* section-1 end */
+/* section-2 */
+.section-2 {
+
+    padding-top: 200px;
+}
+
+.background {
+    background-color: rgb(25, 23, 23);
+}
+
+.homeinterior {
+    height: 100px;
+    width: 100px;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.imgs3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    gap: 220px;
+    flex-wrap: wrap;
+}
+
+.designsolutions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.three-content {
+    padding: 60px 0px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+/* section-2 end */
+
+/* section-3 start */
+.section-3 {
+    width: 100%;
+    color: rgb(164, 157, 157);
+}
+
+.kitchen {
+    height: 200px;
+    width: 230px;
+}
+
+.livingroom {
+    height: 400px;
+    width: 200px;
+}
+
+.theatre {
+    height: 200px;
+    width: 230px;
+}
+
+.office {
+    height: 400px;
+    width: 200px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imgs4 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 130px;
+    flex-wrap: wrap;
+}
+
+/* sec-3 end */
+
+/* sec-4 start */
+.sec4-container {
+    flex-wrap: wrap;
+    padding-top: 80px;
+    width: 100%;
+}
+
+.imgs-booja {
+    height: 250px;
+    width: 210px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+    font-weight: 20px;
+    color: rgb(164, 157, 157);
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding-top: 10px;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.bhooja-content {
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+    padding-top: 30px;
+    color: white;
+}
+
+.footer {
+    background-color: rgb(95, 31, 31);
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content {
+    padding-top: 180px;
+}
+
+h2 {
+    color: white, 0.5;
+}
+
+.top-footer {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+
+}
+
+.img-footer {
+    padding-top: 80px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-style: bolder;
+    padding-top: 50px;
+}
+
+.phone-email {
+    padding-top: 20px;
+
+}
+
+.termspolicy {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 55px;
+}
+
+.bottom-line {
+    margin: 0px 60px;
+}
+
+.footer-bottom {
+    padding-top: 70px;
+}
+
+.single-sofa {
+    height: 500px;
+    width: 500px;
+}
+
+@media(max-width: 650px) {
+    .menu-links {
+        z-index: 99999;
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 10vh;
+        flex-direction: column;
+        width: 100%;
+        height: 90vh;
+        background-color: #333;
+        align-items: center;
+        justify-content: space-evenly;
+        transform: translateX(-100%);
+        transition: 0.5s ease-in;
+    }
+
+    .nav-active {
+        transform: translateX(0);
+    }
+
+    .toggle .line-1 {
+        transform: rotate(-45deg) translate(-10px, 4px);
+    }
+
+    .toggle .line-2 {
+        opacity: 0;
+    }
+
+    .toggle .line-3 {
+        transform: rotate(45deg) translate(-8px, 0px);
+    }
+
+    .lines {
+        transition: all 0.3s ease-in;
+        cursor: pointer;
+        display: block;
+        color: white;
+    }
+
+    .about {
+        padding-left: 50px;
+    }
+
+}
+
+@media(max-width:1100px) {
+
+    .section-2 {
+        padding-top: 100px;
+    }
+
+    .homeinterior {
+        height: 70px;
+        width: 70px;
+    }
+
+    .imgs3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 70px;
+        padding-left: 55px;
+    }
+
+    .img-container {
+        padding-top: 50px;
+
+    }
+
+    .section-3 {
+        background-color: rgb(25, 23, 23);
+        height: auto;
+        width: 100%;
+        color: rgb(164, 157, 157);
+    }
+
+    .sec4-container {
+        padding-top: 100px;
+    }
+
+    .single-sofa {
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media(max-width:750px) {
+    .nav-bar {
+        justify-content: space-around;
+        padding: 0px 0px;
+        height: 10vh;
+    }
+
+    .menu-links {
+        gap: 20px;
+    }
+
+    .sec-1 {
+        justify-content: center;
+    }
+
+    .sec1-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgs4 {
+        gap: 20px;
+    }
+
+    .livingroom {
+        height: 300px;
+        width: 170px;
+    }
+
+    .office {
+        height: 300px;
+        width: 170px;
+    }
+
+    .single-sofa {
+        height: 300px;
+        width: 300px;
+    }
+
+    .content {
+        padding-top: 90px;
+    }
+
+}
+
+@media(max-width:460px) {
+    .single-sofa {
+        height: 300px;
+        width: 270px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
+
+@media(max-width:400px) {
+    .single-sofa {
+        height: 260px;
+        width: 210px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .number {
+        font-size: 13px;
+    }
+
+    .mail {
+        font-size: 13px;
+    }
+}
+
+@media(max-width:370px) {
+    h2 {
+        font-size: 15px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    .single-sofa {
+        height: 200px;
+        width: 170px;
+    }
+}
+
+@media(max-width:300px) {
+    h2 {
+        font-size: 12px;
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+
+    .single-sofa {
+        height: 200px;
+        width: 170px;
+    }
+
+    .number {
+        font-size: 11px;
+    }
+
+    .mail {
+        font-size: 11px;
+    }
+}
